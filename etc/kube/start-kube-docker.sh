@@ -21,4 +21,4 @@ set -Ee
         --api-servers=http://localhost:8080 \
         --config=/etc/kubernetes/manifests \
         --allow-privileged=true
-until kubectl version 2>/dev/null >/dev/null; do sleep 5; done
+until ./kubectl version 2>/dev/null >/dev/null; do sleep 5; done
