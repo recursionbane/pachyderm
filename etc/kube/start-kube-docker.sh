@@ -2,7 +2,7 @@
 
 set -Ee
 
-docker run \
+./docker run \
     -d \
     --volume=/:/rootfs:ro \
     --volume=/sys:/sys:ro \
